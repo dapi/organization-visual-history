@@ -78,9 +78,7 @@ function card(path, title, status, note, promptSource) {
 const simcityRoot = document.querySelector("#simcity-gallery");
 for (const [file, title, status, note] of simcity) {
   const path = `assets/simcity/${file}`;
-  fetch(path, { method: "HEAD" }).then(response => {
-    if (response.ok) simcityRoot.append(card(path, title, status, note, "sources/simcity-prompts.md"));
-  });
+  simcityRoot.append(card(path, title, status, note, "sources/simcity-prompts.md"));
 }
 
 const islandRoot = document.querySelector("#island-gallery");
