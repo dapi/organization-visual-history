@@ -223,8 +223,7 @@ soft focus, depth of field, haze, bloom and illegible pseudo-text.
 а затем очищена точечным edit-проходом ImageGen. Это понадобилось потому, что
 свободная генерация стабильно возвращала сцены к трём горизонтальным рядам.
 
-- исходник: `assets/organization-archipelago-radial-production.png`;
-- Retina WebP: `assets/organization-archipelago-radial-production-retina.webp`;
+- исходник и Retina WebP удалены из архива по решению владельца;
 - версия с Legal: `assets/organization-archipelago-radial-production-legal-retina.webp`;
 - размер Retina: `3456×1820`;
 - актуальный состав: HQ и двенадцать департаментов в текущем production-стиле;
