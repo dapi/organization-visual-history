@@ -1,6 +1,17 @@
 # Organization Visual History
 
-Private visual archive of the Personal Corp organization architecture.
+Visual archive of the Personal Corp organization architecture.
+
+The read-only gallery is published at [archive.pismenny.ru](https://archive.pismenny.ru/).
+The `main` branch is deployed automatically to GitHub Pages by
+`.github/workflows/pages.yml`. The repository itself remains private; the
+selected gallery assets and their provenance are intentionally web-accessible.
+
+For the custom domain, DNS must contain this record:
+
+```text
+archive.pismenny.ru. CNAME dapi.github.io.
+```
 
 Open `index.html` locally to browse the gallery. The canonical organization
 architecture is not stored here; it lives in
