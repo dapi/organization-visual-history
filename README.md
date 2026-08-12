@@ -17,3 +17,11 @@ The current selected projections are:
 
 - `assets/simcity/hq-simcity-primary.png` — primary organization map;
 - `assets/simcity/hq-simcity-development.png` — development-vector map.
+
+Prompt provenance:
+
+- `sources/island-experiments-prompts.md` — project narrative and prompts for
+  the island series;
+- `sources/simcity-prompts.md` — readable SimCity prompt history;
+- `sources/imagegen-calls.jsonl` — exact ImageGen calls recovered from the
+  source Codex session log.
