@@ -3,7 +3,6 @@ const simcity = [
   ["hq-departments-futuristic-simcity-legal.png", "Добавление Legal", "experiment", "Legal встроен как отдельный связанный кабинет."],
   ["hq-departments-futuristic-simcity-full.png", "Добавление Research и Content", "experiment", "Карта приведена к полному локальному перечню того этапа."],
   ["hq-departments-futuristic-simcity-media.png", "Добавление Media", "experiment", "Media отделён от редакционной функции Content."],
-  ["hq-structure-simcity-vs-current.png", "Сравнительный визуал", "experiment", "Промежуточное сравнение структуры, если файл присутствовал в HQ."],
 ];
 
 const islands = [
