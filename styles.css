@@ -30,6 +30,8 @@ p { max-width: 760px; }
 .experiment { color: var(--accent); }
 details { margin-top: 14px; border-top: 1px solid var(--line); padding-top: 12px; }
 summary { cursor: pointer; color: var(--accent); }
-code { color: #d6e5ef; }
+code { color: #d6e5ef; overflow-wrap: anywhere; }
 a { color: #8fc8ec; }
+.inventory { columns: 2 320px; padding-left: 20px; color: var(--muted); }
+.inventory a { overflow-wrap: anywhere; }
 footer { padding: 56px 0; color: var(--muted); }

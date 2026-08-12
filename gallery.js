@@ -26,6 +26,48 @@ const islands = [
   ["organization-radial-attempt-3-flat-silkscreen.png", "Radial Silkscreen"],
 ];
 
+const inventory = [
+  "assets/islands/organization-archipelago-radial-production-legal-dense-v2.webp",
+  "assets/islands/organization-archipelago-radial-production-legal-dense-v3.webp",
+  "assets/islands/organization-archipelago-radial-production-legal-retina.webp",
+  "assets/islands/organization-archipelago-radial-production-retina.webp",
+  "assets/islands/organization-archipelago-radial-production.png",
+  "assets/islands/organization-archipelago-sharp-clean-retina.webp",
+  "assets/islands/organization-attempt-1-drafting-atlas-retina.webp",
+  "assets/islands/organization-attempt-1-drafting-atlas.png",
+  "assets/islands/organization-attempt-2-architects-engraving-retina.webp",
+  "assets/islands/organization-attempt-2-architects-engraving.png",
+  "assets/islands/organization-attempt-3-flat-silkscreen-retina.webp",
+  "assets/islands/organization-attempt-3-flat-silkscreen.png",
+  "assets/islands/organization-production-radial-oval-final-retina.webp",
+  "assets/islands/organization-production-radial-oval-final.png",
+  "assets/islands/organization-production-radial-oval-v3-retina.webp",
+  "assets/islands/organization-production-radial-oval-v3.png",
+  "assets/islands/organization-production-radial-oval-v4-retina.webp",
+  "assets/islands/organization-production-radial-oval-v4.png",
+  "assets/islands/organization-production-radial-oval-v5-retina.webp",
+  "assets/islands/organization-production-radial-oval-v5.png",
+  "assets/islands/organization-production-radial-oval-v6-retina.webp",
+  "assets/islands/organization-production-radial-oval-v6.png",
+  "assets/islands/organization-production-radial-rejected-grid-v2.png",
+  "assets/islands/organization-production-radial-v1-retina.webp",
+  "assets/islands/organization-production-radial-v1.png",
+  "assets/islands/organization-production-scenes-source-2x.png",
+  "assets/islands/organization-production-scenes-source.png",
+  "assets/islands/organization-radial-attempt-1-drafting-atlas-retina.webp",
+  "assets/islands/organization-radial-attempt-1-drafting-atlas.png",
+  "assets/islands/organization-radial-attempt-2-architect-engraving-retina.webp",
+  "assets/islands/organization-radial-attempt-2-architect-engraving.png",
+  "assets/islands/organization-radial-attempt-3-flat-silkscreen-retina.webp",
+  "assets/islands/organization-radial-attempt-3-flat-silkscreen.png",
+  "assets/simcity/hq-departments-futuristic-simcity.png",
+  "assets/simcity/hq-departments-futuristic-simcity-legal.png",
+  "assets/simcity/hq-departments-futuristic-simcity-full.png",
+  "assets/simcity/hq-departments-futuristic-simcity-media.png",
+  "assets/simcity/hq-simcity-primary.png",
+  "assets/simcity/hq-simcity-development.png",
+];
+
 function card(path, title, status, note, promptSource) {
   const article = document.createElement("article");
   article.className = "card";
@@ -45,4 +87,14 @@ const islandRoot = document.querySelector("#island-gallery");
 for (const [file, title] of islands) {
   const rejected = file.includes("rejected") || file.includes("dense-v3");
   islandRoot.append(card(`assets/islands/${file}`, title, rejected ? "rejected" : "experiment", rejected ? "Вариант сохранён как отрицательный результат." : "Шаг поиска радиальной островной метафоры.", "sources/island-experiments-prompts.md"));
+}
+
+const inventoryRoot = document.querySelector("#asset-inventory");
+for (const path of inventory) {
+  const item = document.createElement("li");
+  const link = document.createElement("a");
+  link.href = path;
+  link.textContent = path.replace("assets/", "");
+  item.append(link);
+  inventoryRoot.append(item);
 }
